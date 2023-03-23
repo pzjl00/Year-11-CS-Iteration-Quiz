@@ -46,7 +46,7 @@ public static String camelCaseMe (String str) {
         if (str.charAt(i) != '_' && str.charAt(i) != '-') {
             output = output + str.charAt(i);
         }
-        else if (str.charAt(i) == '-') {
+        else {
             output = output + str.substring(i + 1, i + 2).toUpperCase();
             i++;
         }
